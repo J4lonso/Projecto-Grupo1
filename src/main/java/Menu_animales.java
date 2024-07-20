@@ -3,18 +3,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
  */
 
-
 /**
  *
  * @author josea
  */
-public class Zoologico {
+public class Menu_animales {
 
-
-        String nombre_zoo = "";
-        String Lugar = "";
-        String Max = "";
-        
-        
-        
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        // TODO code application logic here
     }
+}
