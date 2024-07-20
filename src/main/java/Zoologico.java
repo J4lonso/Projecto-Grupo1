@@ -10,12 +10,7 @@
  */
 public class Zoologico {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        // TODO code application logic here
-        
+
         String nombre_zoo = "";
         String Lugar = "";
         String Max = "";
@@ -23,4 +18,3 @@ public class Zoologico {
         
         
     }
-}

@@ -35,28 +35,16 @@ public class Menu {
             }
 
             switch (input) {
-                case 1:
-                    JOptionPane.showMessageDialog(null, "Bienvenida");
-                    break;
-                case 2:
-                    JOptionPane.showMessageDialog(null, "Información del Zoológico");
-                    break;
-                case 3:
-                    JOptionPane.showMessageDialog(null, "Gestión de animales");
-                    break;
-                case 4:
-                    JOptionPane.showMessageDialog(null, "Ubicación actual en el Zoológico");
-                    break;
-                case 5:
-                    JOptionPane.showMessageDialog(null, "Ubicación de los animales");
-                    break;
-                case 6:
+                case 1 -> JOptionPane.showMessageDialog(null, "Bienvenida");
+                case 2 -> JOptionPane.showMessageDialog(null, "Información del Zoológico");
+                case 3 -> JOptionPane.showMessageDialog(null, "Gestión de animales");
+                case 4 -> JOptionPane.showMessageDialog(null, "Ubicación actual en el Zoológico");
+                case 5 -> JOptionPane.showMessageDialog(null, "Ubicación de los animales");
+                case 6 -> {
                     JOptionPane.showMessageDialog(null, "Vuelva pronto");
                     System.exit(0);
-                    break;
-                default:
-                    JOptionPane.showMessageDialog(null, "Opción no válida. Por favor ingrese un número del 1 al 6.");
-                    break;
+                }
+                default -> JOptionPane.showMessageDialog(null, "Opción no válida. Por favor ingrese un número del 1 al 6.");
             }
         }
     }
