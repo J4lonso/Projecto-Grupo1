@@ -2,14 +2,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ubicacion_dentro {
+public class Zoo {
 
     private String nombre;
     private String ubicacion;
     private int capacidad;
     private List<animales> Animales;
 
-    public Ubicacion_dentro(String name, String location, int capacity) {
+    public Zoo(String name, String location, int capacity) {
         this.nombre = name;
         this.ubicacion = location;
         this.capacidad = capacity;
@@ -55,12 +55,8 @@ public class Ubicacion_dentro {
         return null;
     }
 
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        for (animales animal : Animales) {
-            sb.append(animal.toString()).append("\n");
-        }
-        return sb.toString();
+    void start() {
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 }
 
