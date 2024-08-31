@@ -3,11 +3,12 @@
 import javax.swing.JOptionPane;
 
 public class Menu {
+    
+    private Menu_animales menu_animales;
 
  
-    public Menu() {
-
-
+    public Menu(Menu_animales menu_animales) {
+        this.menu_animales = menu_animales;
     }
 
     public void mostrarMenu() {
@@ -36,8 +37,8 @@ public class Menu {
 
             switch (input) {
 
-                case 1 ->
-                    JOptionPane.showMessageDialog(null, "Información del Zoológico");
+                case 1 ->menu_animales.getZoo();
+                    
 
                 case 2 -> {
 

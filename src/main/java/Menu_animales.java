@@ -7,11 +7,19 @@ public class Menu_animales {
 
     private Zoo zoo;
     
+
+    
+    public void Info() {
+        initializeZoo();
+    }
     
     public void start() {
-        initializeZoo();
+        
         mainMenu();
     }
+    
+        
+    
 
     private void initializeZoo() {
         String name = JOptionPane.showInputDialog("Ingrese el nombre del zoológico:");
@@ -19,7 +27,13 @@ public class Menu_animales {
         int capacity = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la capacidad máxima del zoológico para albergar animales:"));
 
         zoo = new Zoo(name, location, capacity);
+        JOptionPane.showMessageDialog(null, zoo.toString());
     }
+    
+    public void getZoo() {
+        
+        JOptionPane.showMessageDialog(null, zoo.toString());
+        }
 
     private void mainMenu() {
         String[] options = {"Agregar Animal", "Eliminar Animal", "Mover Animal", "Buscar Animal", "Reporte de Animales", "Salir"};

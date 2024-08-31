@@ -3,6 +3,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Zoo {
+    
+    
 
     private String nombre;
     private String ubicacion;
@@ -14,6 +16,15 @@ public class Zoo {
         this.ubicacion = location;
         this.capacidad = capacity;
         this.Animales = new ArrayList<>();
+    }
+    
+        public String toString() {
+        
+        return """
+               Informacion Zoologico
+                Nombre:'""" + nombre + '\'' +
+                ",\n Ubicacion:'" + ubicacion + '\'' +
+                ",\n Capacidad maxima de animales" + capacidad;
     }
 
     // Getters and Setters
@@ -58,6 +69,8 @@ public class Zoo {
     void start() {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
+    
+
 }
 
 
