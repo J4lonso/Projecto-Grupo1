@@ -69,6 +69,23 @@ public class Zoo {
     void start() {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    public void setAnimales(List<animales> Animales) {
+        this.Animales = Animales;
+    }
+    
     
 
 }

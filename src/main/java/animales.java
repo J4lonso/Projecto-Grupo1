@@ -35,6 +35,8 @@ public class animales {
 
     public void setLocation(String location) {
         this.location = location;
+        
+        
 
     }
 }

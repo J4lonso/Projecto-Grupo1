@@ -14,13 +14,15 @@ public class Menu {
     public void mostrarMenu() {
 
         while (true) {
-            String menu = "Seleccione una opción:\n"
-                    + "1. Información del Zoológico\n"
-                    + "2. Gestión de animales\n"
-                    + "3. Ubicación actual en el Zoológico\n"
-                    + "4. Ubicación de los animales\n"
-                    + "5. Solicitar reporte\n"
-                    + "6. Salir\n";
+            String menu = """
+                          Seleccione una opci\u00f3n:
+                          1. Informaci\u00f3n del Zool\u00f3gico
+                          2. Gesti\u00f3n de animales
+                          3. Ubicaci\u00f3n actual en el Zool\u00f3gico
+                          4. Ubicaci\u00f3n de los animales
+                          5. Solicitar reporte
+                          6. Salir
+                          """;
 
             String opcion = JOptionPane.showInputDialog(menu);
             if (opcion == null) {
@@ -56,16 +58,34 @@ public class Menu {
                 }
 
                 case 4 -> {
+                    Zoo zoologico = new Zoo();
+                    Ubicacion_dentro ubi = new Ubicacion_dentro(5,5);
                     
+
+                    Animal leon = new Animal("León");
+                    Animal tigre = new Animal("Tigre");
+
+                    zoologico.agregarAnimal(leon, 1, 1);
+                    zoologico.agregarAnimal(tigre, 2, 2);
+
+                    zoologico.mostrarCuadrilla();
+                    zoologico.mostrarUbicaciones();
+
+                    zoologico.moverAnimal(leon, 3, 3);
+                    zoologico.mostrarCuadrilla();
+                    zoologico.mostrarUbicaciones();
+                }
+            
+                    /*
                     JOptionPane.showMessageDialog(null, "Ubicación de los animales");
                     Ubicacion_dentro ubicacion = new Ubicacion_dentro("nombre", "ubicacion", 10);
                     ubicacion.agregarAnimal(new animales("nombreAnimal1", "especie1", 5, "ubicacion1"));
                     ubicacion.agregarAnimal(new animales("nombreAnimal2", "especie2", 3, "ubicacion2"));
                     String reporte = ubicacion.toString();
                     JOptionPane.showMessageDialog(null, reporte);
-                    
+                    */
 
-                }
+                
 
                 case 5 -> {
                     JOptionPane.showMessageDialog(null, "Reporte de animales");
